@@ -1,0 +1,35 @@
+.deckContainer{
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+
+.cardContainer{
+  border-radius: 15px;
+  width: 12vw;
+  background:linear-gradient(to right,rgb(6, 55, 98),rgb(69, 122, 169) );
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(2, fit-content);
+  /* grid-template-columns: 1fr; */
+}
+.cardContainer:hover{
+  box-shadow: 0 10px 15px rgba(6, 55, 98, 0.478), 
+            0 10px 25px rgba(69, 122, 169, 0.506);
+  cursor: pointer;
+
+}
+.name{
+  font-size: 1.5rem;
+  color: white;
+  padding: 0px;
+  justify-self: center;
+}
+.card{
+  width: 8vw;
+  height:auto;
+  justify-self: center;
+}
