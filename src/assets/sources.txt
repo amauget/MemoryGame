@@ -1,0 +1,11 @@
+guitar: https://pixabay.com/photos/electric-guitar-instrument-music-1736291/
+cello: https://www.pexels.com/photo/person-playing-cello-462510/
+sax: https://www.pexels.com/photo/elegant-saxophone-on-stand-in-dim-light-28653605/
+trumpet: https://pixabay.com/photos/trumpet-brass-instrument-instrument-7975/
+clarinet: https://pixabay.com/photos/clarinet-jazz-musical-instrument-722815/
+piano: https://pixabay.com/photos/piano-steinway-keyboard-instrument-3608945/
+bass: https://pixabay.com/photos/bass-guitar-bass-e-bass-instrument-913092/
+accordion: https://www.pexels.com/photo/accordion-on-table-18888495/
+viola: https://pixabay.com/photos/viola-violin-summer-music-classic-4110376/
+flute: https://pixabay.com/photos/black-shiny-flute-keys-music-2681948/
+tuba: https://pixabay.com/photos/brass-music-the-jazz-no-person-3292265/
