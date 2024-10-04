@@ -1,4 +1,4 @@
-export default function Header(){
+export default function Header({ current, allTime }){
   return(
     <div className="headerWrapper">
       <h1 className="title">Memory Game!</h1>
@@ -6,11 +6,11 @@ export default function Header(){
       <div className="scoreContainer">
         <div className="currentContainer">
           <p className="label">Current:</p>
-          <p>0</p> {/* DUMMY VALUES: FUNNEL IN DATA LATER.. */}
+          <p>{current}</p> 
         </div>
         <div className="bestContainer">
           <p className="label">Best:</p>
-          <p>3</p>
+          <p>{allTime}</p>
         </div>
       </div>
     </div>
