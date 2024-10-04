@@ -1,4 +1,5 @@
 .deckContainer{
+  max-width: 1280px;
   justify-self: center;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -7,29 +8,34 @@
 }
 
 
-.cardContainer{
+.cardContainer {
+  padding:0;
   border-radius: 15px;
-  width: 12vw;
-  background:linear-gradient(to right,rgb(6, 55, 98),rgb(69, 122, 169) );
+  width: 14vw;
+  background: linear-gradient(to right, rgb(6, 55, 98), rgb(69, 122, 169));
   display: grid;
   justify-content: center;
   grid-template-rows: repeat(2, fit-content);
-  /* grid-template-columns: 1fr; */
+  box-sizing: border-box;
 }
-.cardContainer:hover{
-  box-shadow: 0 10px 15px rgba(6, 55, 98, 0.478), 
-            0 10px 25px rgba(69, 122, 169, 0.506);
-  cursor: pointer;
 
+.cardContainer:hover {
+  box-shadow: 0 10px 15px rgba(6, 55, 98, 0.478),
+              0 10px 25px rgba(69, 122, 169, 0.506);
+  cursor: pointer;
 }
-.name{
+
+.name {
   font-size: 1.5rem;
   color: white;
   padding: 0px;
   justify-self: center;
+  margin:0;
 }
-.card{
-  width: 8vw;
-  height:auto;
+
+.card {
+  width: auto;
+  height: 25vh;
   justify-self: center;
+  max-width: 100px; /* Ensures cards are not too large on big screens */
 }
