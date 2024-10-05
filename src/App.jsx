@@ -10,7 +10,7 @@ function App() {
 
   const [cardSelect, updateCardSelect] = useState({
     AuditoryAssault: false, BassGuitar: false, Cello: false, Clarinet: false, DrumSet: false, Flute: false, 
-    Guitar: false, Piano: false, Saxophone: false, Trumpet: false, Tuba: false, viola: false 
+    Guitar: false, Piano: false, Saxophone: false, Trumpet: false, Tuba: false, Viola: false 
   })
 
   const [current, updateCurrent] = useState(0) //Current score
@@ -19,25 +19,26 @@ function App() {
 
   const handleClick = (e) =>{
     const selected = e.target.id
+    console.log(cardSelect[selected])
 
     if(cardSelect[selected] === false){
       updateCardSelect(cardSelect, cardSelect[selected] = true) //mark card as selected
       
+      if((current + 1) % 12 === 0){ //player has ran through deck successfully
+
+        for(let i in cardSelect){ //resets card select status to false (continue game)
+          updateCardSelect(cardSelect, cardSelect[i] = false)
+        }     
+      }
       updateCurrent(current + 1) //update current score
-
     }
-    else if(cardSelect[selected] === true){
-      if(current % 12 === 0){ //player has ran through deck successfully
-        updateCurrent(current + 1) 
+    else{
+      if(current > allTime){
+        updateAllTime(current)
       }
-      else{
-        if(current > allTime){
-          updateAllTime(current)
-        }
-        updateCurrent(0)
-      }
+      updateCurrent(0)
 
-      for(let i in cardSelect){ //resets card select status to false
+      for(let i in cardSelect){ //resets card select status to false (new game)
         updateCardSelect(cardSelect, cardSelect[i] = false)
       }
     }
